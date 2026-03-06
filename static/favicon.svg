@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flappy Flask icon">
+  <rect width="64" height="64" rx="16" fill="#0d1b2a"/>
+  <circle cx="28" cy="31" r="14" fill="#ffca3a"/>
+  <circle cx="33" cy="27" r="4.5" fill="#fff"/>
+  <circle cx="34.5" cy="27" r="1.8" fill="#172026"/>
+  <path d="M38 32 52 37 38 42Z" fill="#ff7b00"/>
+  <path d="M16 34c4-8 10-10 15-7-6 2-8 7-6 14-6-1-10-3-9-7Z" fill="#f79824"/>
+</svg>

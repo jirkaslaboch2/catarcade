@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Arcade</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="arcade-body">
+    <main class="arcade-shell arcade-home-shell">
+        <section class="hero-panel hero-home-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">Flask Arcade</p>
+                <h1>Pick a game.</h1>
+                <p class="lede">A small browser arcade served by Flask. One route gives you fast reflexes, the other gives you grid pressure.</p>
+            </div>
+
+            <div class="home-grid">
+                <a class="game-card game-card-flappy" href="{{ url_for('flappy') }}">
+                    <span class="game-card-tag">Action</span>
+                    <h2>Flappy Flask</h2>
+                    <p>Dodge pipes, chase your best score, and restart instantly.</p>
+                    <span class="game-card-link">Play Flappy Flask</span>
+                </a>
+
+                <a class="game-card game-card-block" href="{{ url_for('block_blast') }}">
+                    <span class="game-card-tag">Puzzle</span>
+                    <h2>Block Blast Lite</h2>
+                    <p>Place pieces on an 8x8 board and clear packed rows and columns.</p>
+                    <span class="game-card-link">Play Block Blast Lite</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

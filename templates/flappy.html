@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Flask</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="arcade-body">
+    <main class="arcade-shell">
+        <section class="hero-panel">
+            <nav class="top-nav">
+                <a href="{{ url_for('home') }}">Arcade</a>
+                <a href="{{ url_for('block_blast') }}">Block Blast Lite</a>
+            </nav>
+
+            <div class="hero-copy">
+                <p class="eyebrow">Flask Arcade</p>
+                <h1>Flappy Flask</h1>
+                <p class="lede">A browser-based Flappy Bird clone served by Flask, with responsive canvas gameplay, score tracking, and instant restarts.</p>
+            </div>
+
+            <div class="hud-card">
+                <div class="stat-block">
+                    <span class="stat-label">Score</span>
+                    <span id="score" class="stat-value">0</span>
+                </div>
+                <div class="stat-block">
+                    <span class="stat-label">Best</span>
+                    <span id="best-score" class="stat-value">0</span>
+                </div>
+                <p id="status-message" class="status-message">Press space to launch.</p>
+            </div>
+        </section>
+
+        <section class="game-panel">
+            <div class="canvas-frame">
+                <canvas id="game-canvas" width="420" height="720" aria-label="Flappy Flask game"></canvas>
+                <div class="control-strip">
+                    <span>Space / Tap to flap</span>
+                    <span>R to restart</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
