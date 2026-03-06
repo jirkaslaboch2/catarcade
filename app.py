@@ -19,6 +19,11 @@ def block_blast() -> str:
     return render_template("block_blast.html")
 
 
+@app.route("/driving")
+def driving() -> str:
+    return render_template("driving.html")
+
+
 @app.route("/favicon.ico")
 def favicon():
     return send_from_directory(app.static_folder, "favicon.svg", mimetype="image/svg+xml")

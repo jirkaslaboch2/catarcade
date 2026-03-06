@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Arcade | Cat Dash Rally</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="arcade-body">
+    <main class="arcade-shell">
+        <section class="hero-panel">
+            <nav class="top-nav">
+                <a href="{{ url_for('home') }}">Cat Arcade</a>
+                <a href="{{ url_for('flappy') }}">Flappy Flask</a>
+                <a href="{{ url_for('block_blast') }}">Block Blast Lite</a>
+            </nav>
+
+            <div class="hero-copy">
+                <p class="eyebrow">Cat Arcade</p>
+                <h1>Cat Dash Rally</h1>
+                <p class="lede">Slide between lanes, dodge late-night traffic, and keep the whisker wagon moving long enough to post a new best run.</p>
+            </div>
+
+            <div class="hud-card">
+                <div class="stat-block">
+                    <span class="stat-label">Score</span>
+                    <span id="score" class="stat-value">0</span>
+                </div>
+                <div class="stat-block">
+                    <span class="stat-label">Best</span>
+                    <span id="best-score" class="stat-value">0</span>
+                </div>
+                <p id="status-message" class="status-message">Press Enter to roll out.</p>
+            </div>
+        </section>
+
+        <section class="game-panel">
+            <div class="canvas-frame">
+                <canvas id="driving-canvas" width="420" height="720" aria-label="Cat Dash Rally driving game"></canvas>
+                <div class="control-strip">
+                    <span>A / D or arrow keys to steer</span>
+                    <span>Enter or click to start, R to reset</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/driving.js') }}"></script>
+</body>
+</html>

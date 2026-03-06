@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Flask</title>
+    <title>Cat Arcade | Flappy Flask</title>
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,13 @@
     <main class="arcade-shell">
         <section class="hero-panel">
             <nav class="top-nav">
-                <a href="{{ url_for('home') }}">Arcade</a>
+                <a href="{{ url_for('home') }}">Cat Arcade</a>
                 <a href="{{ url_for('block_blast') }}">Block Blast Lite</a>
+                <a href="{{ url_for('driving') }}">Cat Dash Rally</a>
             </nav>
 
             <div class="hero-copy">
-                <p class="eyebrow">Flask Arcade</p>
+                <p class="eyebrow">Cat Arcade</p>
                 <h1>Flappy Flask</h1>
                 <p class="lede">A browser-based Flappy Bird clone served by Flask, with responsive canvas gameplay, score tracking, and instant restarts.</p>
             </div>

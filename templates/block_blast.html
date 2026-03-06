@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block Blast Lite</title>
+    <title>Cat Arcade | Block Blast Lite</title>
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,13 @@
     <main class="arcade-shell">
         <section class="hero-panel">
             <nav class="top-nav">
-                <a href="{{ url_for('home') }}">Arcade</a>
+                <a href="{{ url_for('home') }}">Cat Arcade</a>
                 <a href="{{ url_for('flappy') }}">Flappy Flask</a>
+                <a href="{{ url_for('driving') }}">Cat Dash Rally</a>
             </nav>
 
             <div class="hero-copy">
-                <p class="eyebrow">Flask Arcade</p>
+                <p class="eyebrow">Cat Arcade</p>
                 <h1>Block Blast Lite</h1>
                 <p class="lede">Pick a shape, place it on the 8x8 board, and clear full rows and columns before the tray jams up.</p>
             </div>

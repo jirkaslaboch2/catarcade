@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Arcade</title>
+    <title>Cat Arcade</title>
     <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,9 @@
     <main class="arcade-shell arcade-home-shell">
         <section class="hero-panel hero-home-panel">
             <div class="hero-copy">
-                <p class="eyebrow">Flask Arcade</p>
+                <p class="eyebrow">Cat Arcade</p>
                 <h1>Pick a game.</h1>
-                <p class="lede">A small browser arcade served by Flask. One route gives you fast reflexes, the other gives you grid pressure.</p>
+                <p class="lede">A small browser arcade served by Flask. Jump, puzzle-solve, or weave through neon traffic from one Cat Arcade hub.</p>
             </div>
 
             <div class="home-grid">
@@ -32,6 +32,13 @@
                     <h2>Block Blast Lite</h2>
                     <p>Place pieces on an 8x8 board and clear packed rows and columns.</p>
                     <span class="game-card-link">Play Block Blast Lite</span>
+                </a>
+
+                <a class="game-card game-card-driving" href="{{ url_for('driving') }}">
+                    <span class="game-card-tag">Driving</span>
+                    <h2>Cat Dash Rally</h2>
+                    <p>Snap between lanes, dodge dense traffic, and see how far your whisker wagon can run.</p>
+                    <span class="game-card-link">Play Cat Dash Rally</span>
                 </a>
             </div>
         </section>
